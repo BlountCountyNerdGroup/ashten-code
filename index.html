@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adventures of Bruno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    
+    <div class="container-left">
+        <div class="util-left">
+            <h4>Health</h4>
+            <div class="box-left">
+                <ul id="health"></ul>
+            </div>
+        </div>
+    
+        <div class="util-left">
+            <h4>Supplies</h4>
+            <div class="box-left">
+                <ul id="supplies"></ul>
+            </div>
+        </div>
+    
+        <div class="util-left">
+            <h4>Cash</h4>
+            <div class="box-left">
+                <ul id="cash"></ul>
+            </div>
+        </div>
+    </div>
+        
+
+    <div class="heading-container">
+        <h2 class="main-heading">Adventures of Bruno</h2>
+        <!-- Animation -->
+        <div class='container'>
+            <div class='bk'>
+                <div class='mid'>
+                    <div class='fore'>
+                        <div class='figure'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button onclick="renderRandNum()">Generate a random number</button>
+        <p id="randNumDiv">This is where the random number goes.</p>
+    </div>
+
+
+    <div class="container-right">
+        <h4>Store</h4>
+        <div class="box-right">
+            <button onclick="buyLife()" class="buy">Buy an extra life</button>
+            <button onclick="buySupplies()" class="buy">Buy a random reward</button>
+        </div>
+    </div>
+    
+</div>
+<script src="rpg.js"></script>
+</body>
+</html>
